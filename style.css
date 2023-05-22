@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.4px;
+}
+.BodyHome{
+    background-color: rgba(209, 209, 209,0.3);
+    display:flex;
+    justify-content: center;
+}
+.background_body{
+    background-color: #343a40;
+}
+.ActivesArames{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    display:none
+}
+
+.titel{
+    width:25%;
+    height:40%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border-radius:5px;
+    padding:8px;
+}
+.titel h2{
+    font-weight: 600;
+    color:#343a40;
+    font-size: 22px;
+}
+.stopalarm{
+    margin-bottom: 12px;
+    width:120px;
+    height:35px;
+    font-size: 18px;
+    background-color: #3264fe;
+    color:#fff;
+    border-radius: 10rem;
+    border:none;
+    cursor: pointer;
+    animation-name: moving;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+}
+@keyframes moving{
+    0%{
+        transform: translateY(-7px);
+        
+    }
+    20%{
+        transform: translateY(4px);
+    }
+    60%{
+        transform: translateY(2px);
+    }
+    100%{
+        transform: translateY(2px);
+    }
+}
+.iocon_cheng{
+    position: absolute;
+    right:50px;
+    top:20px;
+    width:80px;
+    height:35px;
+    background-color: rgba(102, 102, 102,0.2);
+    border-radius:10rem;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+.iocon_chengnigth{
+    background-color: #fff;
+}
+.mode{
+    cursor: pointer;
+    border-radius:50%;
+    background-color: #fff;
+    width: 32px;
+    height:29px;
+    transform: translateY(3px);
+    margin-left: 4px;
+}
+.nigthmode{
+    background-color:#343a40;
+    margin-left: 44px;
+}
+.home{
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    background-color: #fff;
+    border-radius:4px;
+    padding:12px;
+    width:35%;
+    margin-top: 20px;
+}
+.img_alarm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+img{
+    width:50px;
+    height:50px;
+}
+.all_timer,.inputUser{
+    padding:15px;
+    display:flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+.ss,.typeDate,.hh,.mm{
+    width:65px;
+    height:60px;
+    border-radius:4px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 41px;
+}
+.hurs,.mument,.second,.typeDate{
+    margin-top: 5px;
+}
+.typeDate{
+    font-size: 30px;
+    width: 20px;
+    justify-content: center;
+}
+.hoursUser ,.mumentUser,.options{
+    width:70px;
+    height:50px;
+    border:1px solid #666;
+    border-radius:4px;
+    outline:none;
+    text-align: center;
+    font-size: 30px;
+}
+.options{
+    font-size: 27px;
+}
+.option{
+    margin-left: 4px;
+}
+.btu{
+    display:flex;
+    justify-content: center;
+}
+.AddAlarm{
+    width:125px;
+    height:35px;
+    padding:5px;
+    border-radius:10rem;
+    color:#fff;
+    font-size:17px;
+    background-color: #3264fe;
+    border:none;
+    cursor: pointer;
+}
+.all_alarm{
+    margin-top:6px;
+}
+.Alarm{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    border-bottom: 1px solid rgba(102, 102, 102,0.3);
+}
+.Alarm .left{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3px;
+}
+.Alarm .left p{
+    font-size: 25px;
+}
+.Alarm .right{
+    display:flex;
+    column-gap: 7px;
+    align-items: center;
+    justify-content: center;
+}
+.OffOn{
+    position: relative;
+    width:50px;
+    height:27px;
+    background-color: rgba(102, 102, 102,0.3);
+    border-radius:10rem;
+}
+.toles{
+    position: absolute;
+    width:21px;
+    height:21px;
+    border-radius:50%;
+    background-color: #666;
+    transform: translateY(16%);
+    margin-left: 2px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.AddToles{
+    background-color: #3264fe;
+    margin-left: 25px;
+}
+.AddOffOn{
+    background-color: rgba(50, 100, 254,0.3);
+}
+.Alarm i{
+    color:#3264fe;
+    font-size: 30px;
+    cursor: pointer;
+}
+.DeleALL{
+    display:none;
+    padding:5px;
+    margin-top: 15px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.delet{
+    width:100px;
+    height:35px;
+    background-color: #3264fe;
+    color:#fff;
+    font-weight: 600;
+    font-size: 17px;
+    border:none;
+    border-radius:4px;
+    cursor: pointer;
+}
+
+@media (max-width:550px) {
+
+    .home{
+        width:90%;
+        margin-top: 57px;
+    }
+    .iocon_cheng{
+        top:10px;
+        right:21px;
+    }
+}
